@@ -1,7 +1,7 @@
 language: objective-c
 matrix:
     include:
-        - osx_image: xcode8.2.1
+        - osx_image: xcode8
 
 before_install:
     - brew update
