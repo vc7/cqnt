@@ -1,0 +1,12 @@
+language: objective-c
+matrix:
+  include:
+    - osx_image: xcode8.2.1
+
+before_install:
+  - brew update
+  - brew install carthage
+  - carthage bootstrap --no-use-binaries --platform ios
+
+script:
+  - xcodebuild -scheme ios-travis -sdk iphonesimulator -destination 'platform=iOS Simulator,OS=10.1,name=iPhone 7' -configuration Debug test | xcpretty -c
