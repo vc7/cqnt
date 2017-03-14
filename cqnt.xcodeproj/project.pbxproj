@@ -13,6 +13,10 @@
 		BFC00DC91E77F46900E67524 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFC00DC81E77F46900E67524 /* Assets.xcassets */; };
 		BFC00DCC1E77F46900E67524 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFC00DCA1E77F46900E67524 /* LaunchScreen.storyboard */; };
 		BFC00DD71E77F46900E67524 /* cqntTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC00DD61E77F46900E67524 /* cqntTests.swift */; };
+		BFC00DE41E77F63B00E67524 /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC00DE21E77F63B00E67524 /* Nimble.framework */; };
+		BFC00DE51E77F63B00E67524 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC00DE31E77F63B00E67524 /* Quick.framework */; };
+		BFC00DE71E77F64E00E67524 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BFC00DE21E77F63B00E67524 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BFC00DE81E77F64E00E67524 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BFC00DE31E77F63B00E67524 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,6 +29,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		BFC00DE61E77F64000E67524 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BFC00DE71E77F64E00E67524 /* Nimble.framework in CopyFiles */,
+				BFC00DE81E77F64E00E67524 /* Quick.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		BFC00DBE1E77F46900E67524 /* cqnt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cqnt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFC00DC11E77F46900E67524 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -36,6 +54,8 @@
 		BFC00DD21E77F46900E67524 /* cqntTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cqntTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFC00DD61E77F46900E67524 /* cqntTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cqntTests.swift; sourceTree = "<group>"; };
 		BFC00DD81E77F46900E67524 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFC00DE21E77F63B00E67524 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
+		BFC00DE31E77F63B00E67524 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +70,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFC00DE41E77F63B00E67524 /* Nimble.framework in Frameworks */,
+				BFC00DE51E77F63B00E67524 /* Quick.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +84,7 @@
 				BFC00DC01E77F46900E67524 /* cqnt */,
 				BFC00DD51E77F46900E67524 /* cqntTests */,
 				BFC00DBF1E77F46900E67524 /* Products */,
+				BFC00DE11E77F63B00E67524 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,6 +119,15 @@
 			path = cqntTests;
 			sourceTree = "<group>";
 		};
+		BFC00DE11E77F63B00E67524 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BFC00DE21E77F63B00E67524 /* Nimble.framework */,
+				BFC00DE31E77F63B00E67524 /* Quick.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -123,6 +155,7 @@
 				BFC00DCE1E77F46900E67524 /* Sources */,
 				BFC00DCF1E77F46900E67524 /* Frameworks */,
 				BFC00DD01E77F46900E67524 /* Resources */,
+				BFC00DE61E77F64000E67524 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -367,6 +400,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = ZAA88TS93T;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = cqntTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vc7.cqntTests;
@@ -382,6 +419,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = ZAA88TS93T;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = cqntTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vc7.cqntTests;
