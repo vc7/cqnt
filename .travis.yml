@@ -7,7 +7,7 @@ before_install:
   - brew update
   - brew unlink carthage
   - brew install carthage
-  - carthage bootstrap --no-use-binaries --platform ios
+  - carthage update --platform ios 
 
 script:
-  - xcodebuild -scheme ios-travis -sdk iphonesimulator -destination 'platform=iOS Simulator,OS=10.1,name=iPhone 7' -configuration Debug test | xcpretty -c
+  - xcodebuild -scheme cqnt -sdk iphonesimulator -destination 'platform=iOS Simulator,OS=10.1,name=iPhone 7' -configuration Debug test | xcpretty -c
