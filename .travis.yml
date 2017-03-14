@@ -10,4 +10,4 @@ before_install:
     - carthage bootstrap --no-use-binaries --platform ios
 
 script:
-    - xcodebuild -scheme cqnt -sdk iphonesimulator -destination 'platform=iOS Simulator,OS=10.2,name=iPhone 7' -configuration Debug test | xcpretty -c
+    - xcodebuild -scheme cqnt -sdk iphonesimulator -destination 'platform=iOS Simulator,OS=10.0,name=iPhone 7' -configuration Debug test | xcpretty -c
