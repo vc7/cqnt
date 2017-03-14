@@ -11,3 +11,4 @@ before_install:
 
 script:
   - xcodebuild -scheme cqnt -sdk iphonesimulator -destination 'platform=iOS Simulator,id=E40727B3-41FB-4D6E-B4CB-BFA87109EB12,OS=10.2' -configuration Debug test | xcpretty -c
+  - bash <(curl -s https://codecov.io/bash)
