@@ -17,6 +17,12 @@
 		BFC00DE51E77F63B00E67524 /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC00DE31E77F63B00E67524 /* Quick.framework */; };
 		BFC00DE71E77F64E00E67524 /* Nimble.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BFC00DE21E77F63B00E67524 /* Nimble.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BFC00DE81E77F64E00E67524 /* Quick.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BFC00DE31E77F63B00E67524 /* Quick.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BFC00DEB1E77F7C800E67524 /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC00DEA1E77F7C800E67524 /* Pet.swift */; };
+		BFC00DEC1E77F7C800E67524 /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC00DEA1E77F7C800E67524 /* Pet.swift */; };
+		BFC00DEE1E77F85D00E67524 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC00DED1E77F85D00E67524 /* Dog.swift */; };
+		BFC00DEF1E77F85D00E67524 /* Dog.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC00DED1E77F85D00E67524 /* Dog.swift */; };
+		BFC00DF11E77F90C00E67524 /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC00DF01E77F90C00E67524 /* Cat.swift */; };
+		BFC00DF21E77F90C00E67524 /* Cat.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC00DF01E77F90C00E67524 /* Cat.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +62,9 @@
 		BFC00DD81E77F46900E67524 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFC00DE21E77F63B00E67524 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		BFC00DE31E77F63B00E67524 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
+		BFC00DEA1E77F7C800E67524 /* Pet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
+		BFC00DED1E77F85D00E67524 /* Dog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dog.swift; sourceTree = "<group>"; };
+		BFC00DF01E77F90C00E67524 /* Cat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cat.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +115,7 @@
 				BFC00DC81E77F46900E67524 /* Assets.xcassets */,
 				BFC00DCA1E77F46900E67524 /* LaunchScreen.storyboard */,
 				BFC00DCD1E77F46900E67524 /* Info.plist */,
+				BFC00DE91E77F7A700E67524 /* Pet */,
 			);
 			path = cqnt;
 			sourceTree = "<group>";
@@ -126,6 +136,16 @@
 				BFC00DE31E77F63B00E67524 /* Quick.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BFC00DE91E77F7A700E67524 /* Pet */ = {
+			isa = PBXGroup;
+			children = (
+				BFC00DEA1E77F7C800E67524 /* Pet.swift */,
+				BFC00DED1E77F85D00E67524 /* Dog.swift */,
+				BFC00DF01E77F90C00E67524 /* Cat.swift */,
+			);
+			path = Pet;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,7 +254,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFC00DEB1E77F7C800E67524 /* Pet.swift in Sources */,
 				BFC00DC41E77F46900E67524 /* ViewController.swift in Sources */,
+				BFC00DF11E77F90C00E67524 /* Cat.swift in Sources */,
+				BFC00DEE1E77F85D00E67524 /* Dog.swift in Sources */,
 				BFC00DC21E77F46900E67524 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -243,7 +266,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFC00DF21E77F90C00E67524 /* Cat.swift in Sources */,
 				BFC00DD71E77F46900E67524 /* cqntTests.swift in Sources */,
+				BFC00DEC1E77F7C800E67524 /* Pet.swift in Sources */,
+				BFC00DEF1E77F85D00E67524 /* Dog.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
