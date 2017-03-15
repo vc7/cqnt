@@ -179,7 +179,6 @@
 				BFC00DCF1E77F46900E67524 /* Frameworks */,
 				BFC00DD01E77F46900E67524 /* Resources */,
 				BFC00DE61E77F64000E67524 /* CopyFiles */,
-				BFC00DF61E7825CA00E67524 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -252,24 +251,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		BFC00DF61E7825CA00E67524 /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Quick.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BFC00DBA1E77F46900E67524 /* Sources */ = {
