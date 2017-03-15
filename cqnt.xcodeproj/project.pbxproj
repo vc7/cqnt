@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BFAEB78A1E79A72F00620EED /* DogTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAEB7891E79A72F00620EED /* DogTests.swift */; };
+		BFAEB78C1E79A86800620EED /* CatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFAEB78B1E79A86800620EED /* CatTests.swift */; };
 		BFC00DC21E77F46900E67524 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC00DC11E77F46900E67524 /* AppDelegate.swift */; };
 		BFC00DC41E77F46900E67524 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFC00DC31E77F46900E67524 /* ViewController.swift */; };
 		BFC00DC71E77F46900E67524 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFC00DC51E77F46900E67524 /* Main.storyboard */; };
@@ -51,6 +53,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BFAEB7891E79A72F00620EED /* DogTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogTests.swift; sourceTree = "<group>"; };
+		BFAEB78B1E79A86800620EED /* CatTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CatTests.swift; sourceTree = "<group>"; };
 		BFC00DBE1E77F46900E67524 /* cqnt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = cqnt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFC00DC11E77F46900E67524 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFC00DC31E77F46900E67524 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -127,6 +131,8 @@
 			children = (
 				BFC00DD61E77F46900E67524 /* DogSpecs.swift */,
 				BFC00DF31E77FADF00E67524 /* CatSpecs.swift */,
+				BFAEB7891E79A72F00620EED /* DogTests.swift */,
+				BFAEB78B1E79A86800620EED /* CatTests.swift */,
 				BFC00DD81E77F46900E67524 /* Info.plist */,
 			);
 			path = cqntTests;
@@ -271,9 +277,11 @@
 			files = (
 				BFC00DF21E77F90C00E67524 /* Cat.swift in Sources */,
 				BFC00DD71E77F46900E67524 /* DogSpecs.swift in Sources */,
+				BFAEB78A1E79A72F00620EED /* DogTests.swift in Sources */,
 				BFC00DEC1E77F7C800E67524 /* Pet.swift in Sources */,
 				BFC00DF41E77FADF00E67524 /* CatSpecs.swift in Sources */,
 				BFC00DEF1E77F85D00E67524 /* Dog.swift in Sources */,
+				BFAEB78C1E79A86800620EED /* CatTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,6 +489,7 @@
 				BFC00DDD1E77F46900E67524 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BFC00DDE1E77F46900E67524 /* Build configuration list for PBXNativeTarget "cqntTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +498,7 @@
 				BFC00DE01E77F46900E67524 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
