@@ -12,9 +12,16 @@ import Nimble
 class DogSpecs: QuickSpec {
     override func spec() {
         describe("A dog") {
+            
             var dog: Dog?
+            let name: String = "John"
+            
             beforeEach {
-                dog = Dog(name: "John")
+                dog = Dog(name: name)
+            }
+            
+            it("named John.") {
+                expect(dog?.name).to(equal(name))
             }
             
             it("can self introduce.") {
